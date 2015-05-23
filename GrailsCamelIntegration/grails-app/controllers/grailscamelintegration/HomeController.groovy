@@ -4,7 +4,8 @@ class HomeController {
 
     def index() { }
     def sendMeMessage() {
-        def myMessage = [name:"foo",data:"bar"]
+
+        def myMessage = []
         sendMessage("seda:input.queue", myMessage)
     }
 }
